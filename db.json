@@ -1,0 +1,99 @@
+{
+    "photos": [
+      {
+        "id": 1,
+        "title": "Landscape",
+        "description": "A moment of contemplation amidst the urban landscape.",
+        "image_url": "https://res.cloudinary.com/dks2c9evk/image/upload/v1682515321/samples/landscapes/girl-urban-view.jpg",
+        "tags": ["urbanview","cityscape"],
+        "comments": [
+          {
+            "id": 1,
+            "text": "Stunning view!",
+            "author": "John"
+          },
+          {
+            "id": 2,
+            "text": "Wow, this looks amazing.",
+            "author": "Jane"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Cloudscape",
+        "description": "A photo of the clouds at sunset.",
+        "image_url": "https://res.cloudinary.com/dks2c9evk/image/upload/v1682516805/SUNSET_CLOUDS_qmyd9s.jpg",
+        "tags": ["clouds", "sunset"],
+        "comments": [
+          {
+            "id": 1,
+            "text": "This is so peaceful.",
+            "author": "Sara"
+          },
+          {
+            "id": 2,
+            "text": "Love the colors!",
+            "author": "Peter"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Night",
+        "description": "A night shot of the city skyline.",
+        "image_url": "https://res.cloudinary.com/dks2c9evk/image/upload/v1682516523/city-3021474__480_bqne3q.jpg",
+        "tags": ["city", "night"],
+        "comments": [
+          {
+            "id": 1,
+            "text": "Looks like a scene from a movie.",
+            "author": "Mark"
+          },
+          {
+            "id": 2,
+            "text": "This is incredible!",
+            "author": "Sophie"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Panorama",
+        "description": "A panoramic view of the beach at sunrise.",
+        "image_url": "https://res.cloudinary.com/dks2c9evk/image/upload/v1682515925/beach-1751455__480_dkcrom.jpg",
+        "tags": ["beach", "sunrise"],
+        "comments": [
+          {
+            "id": 1,
+            "text": "Wish I was there right now.",
+            "author": "Emily"
+          },
+          {
+            "id": 2,
+            "text": "Absolutely breathtaking!",
+            "author": "Tom"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Sunrise/Sunset",
+        "description": "A photo of the sun setting over the mountains.",
+        "image_url": "https://res.cloudinary.com/dks2c9evk/image/upload/v1682516942/SUNSET_OVER_MOUNTAIN_vru4dm.jpg",
+        "tags": ["sunset", "mountains"],
+        "comments": [
+          {
+            "id": 1,
+            "text": "What a gorgeous shot!",
+            "author": "Olivia"
+          },
+          {
+            "id": 2,
+            "text": "Love the colors in this one.",
+            "author": "William"
+          }
+        ]
+      }
+    ]
+  }
