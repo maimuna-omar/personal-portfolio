@@ -43,26 +43,18 @@ nextButton.addEventListener('click', nextPhoto);
 
 getData();
 
-  
-  function submit(){const button = document.getElementById("submit");
-  button.addEventListener("click",(event) =>{
+function handleForm() {
+  const form = document.getElementById("form");
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
-    alert("Message received, will get back to you")
-  }
-  )
-  }
-  submit();
-  
-  function handleForm(){const form = document.getElementById("form");
-  form.addEventListener("submit",(event) =>{
-    event.preventDefault();
-    alert("message submitted successfully")
-    document.querySelectorAll("input").value=""
-  }
-  )
-  }
-  handleForm();
-  
+    alert("Message received, will get back to you.");
+    document.querySelectorAll("input, textarea").forEach((input) => {
+      input.value = "";
+    });
+  });
+}
+handleForm();
+
   
   function scrollup() {
     const footer = document.querySelector("#footer");
