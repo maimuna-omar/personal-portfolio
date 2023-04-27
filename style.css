@@ -272,31 +272,6 @@ body {
   background: #a94de7;
 }
 
-/* .skills .content .col-right .bar .landscape:before {
-  width: 100%;
-  background: #6909a9;
-}
-
-.skills .content .col-right .bar .cloudscape:before {
-  width: 80%;
-  background: #6909a9;
-}
-
-.skills .content .col-right .bar .panorama:before {
-  width: 100%;
-  background: #6909a9;
-}
-
-.skills .content .col-right .bar .sunrise-sunset:before {
-  width: 80%;
-  background: #6909a9;
-}
-
-.skills .content .col-right .bar .night:before {
-  width: 60%;
-  background: #6909a9;
-} */
-
 .services .content {
   display: flex;
   justify-content: center;
