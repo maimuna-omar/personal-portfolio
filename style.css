@@ -320,6 +320,122 @@ body {
   font-weight: 700;
 }
 
+#portfolio{
+  background: url(https://img.freepik.com/free-photo/aesthetic-purple-smoke-banner-background_53876-129044.jpg?w=2000)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+} 
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #3a6cf4;
+}
+.work {
+  background: url(https://img.freepik.com/free-photo/aesthetic-purple-smoke-banner-background_53876-129044.jpg?w=2000) no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+}
+
+.work-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+#my-work {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.photo {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.photo:first-child {
+  display: block;
+}
+
+.photo img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+}
+
+
+.photo h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #2e3fd3;
+}
+
+.photo p {
+  margin: 0;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+}
+
+#next-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0e0d0e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.photo {
+  margin: 10;
+  padding: 10;
+}
+
+/* Default style for the like button */
+.like-button {
+  background-color: green;
+  color: rgb(19, 19, 19);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 120px;
+  height: 40px;
+}
+
+/* Style for the unlike button */
+.unlike-button {
+  background-color: red;
+  color: rgb(19, 18, 18);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 120px;
+  height: 40px;
+}
+
+/* Style for the like count */
+#like-count {
+  font-size: 16px;
+  margin-left: 10px;
+}
+ 
 .contact .content {
   display: flex;
   /* justify-content: center; */

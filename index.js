@@ -1,36 +1,48 @@
+const portfolioSection = document.getElementById('portfolio');
+const myWorkDiv = document.getElementById('my-work');
+const nextButton = document.getElementById('next-btn');
+let currentIndex = 0;
+let photos = [];
+
 async function getData() {
-    const response = await fetch('https://raw.githubusercontent.com/maimuna-omar/personal-portfolio/main/db.json');
-    const data = await response.json();
-    console.log(data);
-    return data;
-  }
-  (async function () {
-    const data = await getData();
-    const portfolioSection = document.getElementById('portfolio');
-    const myWorkDiv = document.getElementById('my-work');
+  const response = await fetch('https://raw.githubusercontent.com/maimuna-omar/personal-portfolio/main/db.json');
+  const data = await response.json();
+  photos = data.photos;
+  console.log(photos);
+  showPhoto(currentIndex);
+}
+
+function showPhoto(index) {
+  const currentPhoto = photos[index];
+  const photoElement = document.createElement('div');
+  photoElement.classList.add('photo');
+      
+  const imageElement = document.createElement('img');
+  imageElement.src = currentPhoto.image_url;
   
-    data.photos.forEach(photo => {
-      const photoElement = document.createElement('div');
-      photoElement.classList.add('photo');
+  const titleElement = document.createElement('h3');
+  titleElement.textContent = currentPhoto.title;
       
-      const imageElement = document.createElement('img');
-      imageElement.src = photo.image_url;
-      imageElement.style.width="100px"
-      imageElement.style.height="100px"
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = currentPhoto.description;
       
-      const titleElement = document.createElement('h3');
-      titleElement.textContent = photo.title;
+  photoElement.appendChild(imageElement);
+  photoElement.appendChild(titleElement);
+  photoElement.appendChild(descriptionElement);
       
-      const descriptionElement = document.createElement('p');
-      descriptionElement.textContent = photo.description;
-      
-      photoElement.appendChild(imageElement);
-      photoElement.appendChild(titleElement);
-      photoElement.appendChild(descriptionElement);
-      
-      portfolioSection.appendChild(photoElement);
-    });
-  })();
+  myWorkDiv.innerHTML = '';
+  myWorkDiv.appendChild(photoElement);
+}
+
+function nextPhoto() {
+  currentIndex = (currentIndex + 1) % photos.length;
+  showPhoto(currentIndex);
+}
+
+nextButton.addEventListener('click', nextPhoto);
+
+getData();
+
   
   function submit(){const button = document.getElementById("submit");
   button.addEventListener("click",(event) =>{
@@ -85,4 +97,29 @@ async function getData() {
   }
   
   scrollup();
-  
+
+
+
+  const likeButton = document.getElementById('like-btn');
+const likeCount = document.getElementById('like-count');
+let count = 0;
+let isLiked = false;
+
+likeButton.addEventListener('click', () => {
+  if (isLiked) {
+    count--;
+    likeCount.textContent = count;
+    likeButton.textContent = 'Like';
+    likeButton.classList.remove('unlike-button');
+    likeButton.classList.add('like-button');
+    isLiked = false;
+  } else {
+    count++;
+    likeCount.textContent = count;
+    likeButton.textContent = 'Unlike';
+    likeButton.classList.remove('like-button');
+    likeButton.classList.add('unlike-button');
+    isLiked = true;
+    alert("Thanks for the like!");
+  }
+});
