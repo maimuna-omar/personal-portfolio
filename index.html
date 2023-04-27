@@ -12,24 +12,25 @@
       <i class="fas fa-angle-up"></i>
     </div>
 
-    <header>
+    <header class "container">
+     
       <a href="#" class="brand">MAYA's PORTFOLIO</a>
       <div class="menu-btn"></div>
       <div class="navigation">
         <a href="#main">HOME</a>
         <a href="#about">ABOUT</a>
-        <a href="#Skills">SKILLS</a>
+        <a href="#skills">SKILLS</a>
         <a href="#services">SERVICES</a>
         <a href="#work">WORK</a>
         <a href="#contact">CONTACT</a>
       </div>
+  
     </header>
 
     <section class="main" id="main">
       <div class="content">
         <h2>Hey, I'm<br><span>Maimuna Omar</span></h2>
         <div class="animated-text">
-          <h3>photographer</h3>
           <h3>Landscape Photographer</h3>
           <h3>Cloudscape Photographer</h3>
           <h3>Sunrise/Sunset Photographer</h3>
@@ -57,7 +58,6 @@
         <div class="column col-right reveal">
           <h2 class="content-title">Hey everyone my name is Maimuna Omar</h2>
           <p class="paragraph-text"> I'm a passionate photographer with a love for capturing the beauty of nature. <br> <br> A landscape and cloudscape photographer, I strive to capture stunning images that showcase the grandeur and majesty of the natural world. Whether I'm exploring new locations or revisiting old favorites,<br><br> I'm always on the lookout for unique perspectives and interesting compositions that tell a story through my photographs. Through my work,<br><br> I hope to inspire others to appreciate the beauty of the world around us and to see it through a new lens.</p>
-          <a href="#" class="btn">See More</a>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
               <br><br>
               Lastly, my experience in night photography allows me to capture the beauty of the night sky and create stunning images of the stars and the Milky Way.
             </p>
-            <a href="#" class="btn">See More</a>
+            <br><br>
           </div>
           <div class="column col-right reveal">
             <div class="bar">
@@ -171,12 +171,14 @@
           </div>
         </div>
       </section>
+
       <section class="work" id="work">
         <div class="title reveal">
             <h2 class="section-title">My Work</h2>
           </div>
-
+          <div id="my-work"></div>
       </section>
+
       <section class="contact" id="contact">
         <div class="title reveal">
           <h2 class="section-title">Contact Me</h2>
@@ -189,7 +191,7 @@
               </div>
               <div class="info">
                 <h3>Address</h3>
-                <span>Address,NAIROBI, KENYA</span>
+                <span>P.O BOX 4189-0100,NAIROBI, KENYA</span>
               </div>
             </div>
             <div class="card reveal">
@@ -198,7 +200,7 @@
               </div>
               <div class="info">
                 <h3>Phone</h3>
-                <span>+123456789101112</span>
+                <span>+25479351791</span>
               </div>
             </div>
             <div class="card reveal">
@@ -207,7 +209,7 @@
               </div>
               <div class="info">
                 <h3>Email Address</h3>
-                <span>Welcome@email.com</span>
+                <span>maymuna07@email.com</span>
               </div>
             </div>
             <div class="card reveal">
@@ -222,29 +224,33 @@
           </div>
           <div class="row">
             <div class="contact-form reveal">
-              <h3>Send Message</h3>
-              <div class="input-box">
-                <input type="text" name="" value="" placeholder="Name">
+                <h3>Send Message</h3>
+                <form action="">
+                  <div class="input-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                  </div>
+                  <div class="input-box">
+                    <input type="submit" class="send-btn" value="submit">
+                  </div>
+                </form>
               </div>
-              <div class="input-box">
-                <input type="text" name="" value="" placeholder="Email">
-              </div>
-              <div class="input-box">
-                <input type="text" name="" value="" placeholder="Message">
-              </div>
-              <div class="input-box">
-                <input type="submit" class="send-btn" name="" value="Send"/>
-              </div>
-            </div>
-          </div>          
-        </div>
+              
       </section>
   
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <span class="footer-title">Maimuna Omar</span>
         <p>Copyright @2022 <a href="#">photography Wall</a>. All Rights Reserved.</p>
       </footer>
-
+  
      <script src="app.js"></script>
 
 </body>
