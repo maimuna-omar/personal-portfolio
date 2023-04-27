@@ -1,4 +1,4 @@
-**Personal Portfolio**
+# **Personal Portfolio**
 Welcome to my photography portfolio! My name is Maimuna Omar and I'm a passionate photographer with a love for capturing the beauty of nature. As a landscape and cloudscape photographer, I strive to capture stunning images that showcase the grandeur and majesty of the natural world.
 
 # About Me
