@@ -30,12 +30,6 @@ async function getData() {
       
       portfolioSection.appendChild(photoElement);
     });
-  
-    // data.photos.forEach(photo => {
-    //   const projectDiv = document.createElement('div');
-    //   projectDiv.textContent = photo.title;
-    //   myWorkDiv.appendChild(projectDiv);
-    // });
   })();
   
   function submit(){const button = document.getElementById("submit");
@@ -91,3 +85,4 @@ async function getData() {
   }
   
   scrollup();
+  
