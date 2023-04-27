@@ -319,7 +319,7 @@ body {
   margin: 10px;
   font-weight: 700;
 }
-
+/* PORTFOLIO section css */
 #portfolio{
   background: url(https://img.freepik.com/free-photo/aesthetic-purple-smoke-banner-background_53876-129044.jpg?w=2000)no-repeat;
   background-size: cover;
@@ -414,6 +414,7 @@ body {
   width: 120px;
   height: 40px;
 }
+/* PORTFOLIO section css */
 
 /* Style for the unlike button */
 .unlike-button {
@@ -435,7 +436,9 @@ body {
   font-size: 16px;
   margin-left: 10px;
 }
- 
+       
+/* CONTACT section css */
+
 .contact .content {
   display: flex;
   /* justify-content: center; */
@@ -548,7 +551,9 @@ body {
 .contact-form .input-box .send-btn:hover {
   background: #235bf6;
 }
+/* CONTACT section css */
 
+/*  FOOTERsection css */
 .footer {
   color: #6909a9;
   text-align: center;
@@ -572,3 +577,4 @@ body {
   text-decoration: none;
   color: #050506;
 }
+/* FOOTER section css */
